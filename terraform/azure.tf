@@ -27,5 +27,6 @@ module "infrastructure" {
   vpnpipname = "hubgatewaypip"
   vpnname = "hubgateway"
   vpniprange = "192.168.200.0/24"
+  vpnsku = "VpnGw1"
   tags = "${var.tags}"
 }
