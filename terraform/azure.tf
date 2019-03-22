@@ -12,6 +12,8 @@ module "base" {
   region_prefix = "${var.region_prefix}"
   tags = "${var.tags}"
 }
+
+# NETWORK INFRASTRUCTURE #
 module "infrastructure" {
   source = ".//modules//infrastructure"
   location = "${module.base.orchestration_rgname_location}"
