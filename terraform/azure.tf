@@ -28,5 +28,6 @@ module "infrastructure" {
   vpnname = "hubgateway"
   vpniprange = "192.168.200.0/24"
   vpnsku = "VpnGw1"
+  rootcertfile = "${file(var.rootcertfile)}"
   tags = "${var.tags}"
 }
