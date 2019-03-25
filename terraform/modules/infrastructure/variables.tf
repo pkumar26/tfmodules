@@ -2,6 +2,10 @@ variable "location" {}
 variable "rgname" {}
 variable "vnet1name" {}
 variable "vnet1range" {}
+variable "vnet2name" {}
+variable "vnet2range" {}
+variable "vnet3name" {}
+variable "vnet3range" {}
 variable "gtwsubnetname" {}
 variable "gtwsubnetrange" {}
 variable "subnet1name" {}

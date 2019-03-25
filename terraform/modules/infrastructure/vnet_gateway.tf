@@ -27,6 +27,7 @@ resource "azurerm_virtual_network_gateway" "hubgateway" {
 
   vpn_client_configuration {
     address_space = ["${var.vpniprange}"]
+    vpn_client_protocols = ["IkeV2","SSTP"]
 
     root_certificate {
       name = "P2Srootcert"
